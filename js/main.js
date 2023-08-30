@@ -357,6 +357,7 @@ $(document).ready(function(){
 
     $("#download").click(function() {
         getPDF('#content');
+        $("#love").css('display','block').delay(1000).fadeOut("slow");
     });
 
     $("#resetrinfo").click(function() {
