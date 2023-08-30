@@ -134,10 +134,10 @@ $(document).ready(function(){
                     
                     $("#course").append(newOption);
                 });
-                $("#ssem").text(type);
             }else{
-                $("#course").append("<option selected>Not avaialable.Click on preview to edit.</option>")
+                $("#course").append("<option selected>Not available.Click on preview to edit.</option>")
             }
+            $("#ssem").text(type);
             localStorage.setItem('semester', type);
         }else{
             $("#course").empty();
@@ -357,7 +357,7 @@ $(document).ready(function(){
 
     $("#download").click(function() {
         getPDF('#content');
-        $("#love").css('display','block').delay(1000).fadeOut("slow");
+        $("#love").css('display','block').delay(4000).fadeOut("slow");
     });
 
     $("#resetrinfo").click(function() {
