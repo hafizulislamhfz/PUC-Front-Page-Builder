@@ -4,7 +4,7 @@ kendo.pdf.defineFont({
     "DejaVu Sans|Bold|Italic" : "https://kendo.cdn.telerik.com/2016.2.607/styles/fonts/DejaVu/DejaVuSans-Oblique.ttf",
     "DejaVu Sans|Italic"      : "https://kendo.cdn.telerik.com/2016.2.607/styles/fonts/DejaVu/DejaVuSans-Oblique.ttf",
 });
-let globaltype = 'Report';
+let globaltype = 'Report'; 
 let id = '';
 
 function getPDF(selector) {
