@@ -4,6 +4,19 @@ body{
     font: 1em Ubuntu; 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+.main{
+    opacity: 0.5;
+    pointer-events: none;
+}
+#preloader{
+    background: transparent url(../img/Loader.svg) no-repeat center center;
+    background-size: 15%;
+    height: 100vh;
+    width: 100%;
+    position:fixed;
+    z-index: 100;
+}
 .nav{
     justify-content: center;
     border-bottom: 1px solid rgb(40, 38, 154);

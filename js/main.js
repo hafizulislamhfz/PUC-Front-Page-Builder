@@ -103,6 +103,15 @@ const course = [
 ]
 
 $(document).ready(function(){
+    window.onload = function() {
+        $('.main').css('opacity','1');
+        $('.main').css('pointer-events','auto');
+        $("#preloader").delay(1000).fadeOut("slow");
+    };
+    $(window).on('load', function(){
+        
+    });
+
     function selectcourese(type){
         if(type != "Select...."){
             let filter = course.filter(
