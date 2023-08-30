@@ -1,0 +1,138 @@
+#insert-info{
+    display: none;
+}
+#preview-item{
+    display: none;
+}
+
+.pdf-page{
+    overflow: visible;
+}
+
+.footer , .nav{
+    box-shadow: none;
+    border: none;
+    display: none;
+}
+
+page[size="A4"] {  
+    width: 8.3in;
+    height: 11.7in;
+}
+page {
+    border: none;
+    box-shadow: none;
+}
+#content {
+    display: block;
+}
+
+
+
+page .body{
+    border: 4px solid rgb(61, 94, 161);
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+page .body .name{
+    text-align: center;
+    border: 3px solid rgb(40, 78, 155);
+    margin: 5px 5px 0px 5px;
+}
+
+page .body .name h1{
+    padding: 5px;
+    font-size: 40px;
+    font-weight: 600;
+    margin: 0;
+}
+
+page .body .logo{
+    text-align: center;
+    margin: -20px 5px 0px 5px;
+}
+
+page .body .logo img{
+    height: 280px;
+    width: 350px;
+}
+
+page .body .dept{
+    text-align: center;
+    margin: -20px 5px 0px 5px;
+    border: 3px solid rgb(40, 78, 155);
+}
+
+page .body .dept h4{
+    padding: 5px;
+    margin: 0;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+page .body .details{
+    text-align: left;
+    padding: 6px;
+    margin: 8px 0px 0px 0px;
+    height: 410px;
+    overflow: auto;
+}
+#sname{
+    font-size: 26px !important;
+}
+
+h4{
+    font-size: 32px;
+}
+
+#c-code{
+    font-size: 32px;
+}
+
+page .body .submit-info{
+    text-align: left;
+    padding: 6px;
+    color: rgb(40, 78, 155);
+    font-weight: 600;
+}
+
+page .body .submit-info h4 .submit{
+    margin-left: 90px;
+}
+
+page .body .subinfo .row div{
+    padding: 2px;
+
+}
+
+page .body .subinfo .row div .remark{
+    width: 240px;
+    margin-left: 15px;
+}
+
+page .body .subinfo .row div .subby{
+    width: 485px;
+    margin-left: 9px;
+    padding: 5px;
+}
+
+page .body .subinfo .row div .subby h4 .bat{
+    margin-right: 30px;
+}
+
+page .body .subinfo .row div .border{
+    height: 240px;
+    margin-top: -14px;
+    border: 3px solid rgb(61, 94, 161) !important;
+}
+
+@media (min-width: 310px) and (max-width: 430px) { 
+    page .body .submit-info h4 .submit {
+        margin-left: 73px;
+    }
+    page .body .subinfo .row div .subby {
+        padding: 7px;
+    }
+}

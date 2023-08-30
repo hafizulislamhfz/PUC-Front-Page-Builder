@@ -1,0 +1,193 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap'); */
+
+body{
+    font: 1em Ubuntu;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.nav{
+    justify-content: center;
+    border-bottom: 1px solid rgb(40, 38, 154);
+    box-shadow: 0px 0px 10px rgb(40, 38, 154);
+    margin-bottom: 1rem;
+    color: rgb(40, 38, 154);
+}
+
+section{
+    margin-bottom: 2.5rem;
+}
+#insert-info{
+    padding-left: 40px;
+}
+
+#insert-info h4{ 
+    color: rgb(40, 38, 154);
+}
+
+#content {
+    position: relative;
+    font-family: "DejaVu Sans", "Arial", sans-serif;
+}
+  
+#content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/PUC logo.png') no-repeat center;
+    background-size: 450px auto;
+    opacity: 0.1;
+    /* pointer-events: none; */
+}
+
+page[size="A4"] {  
+    width: 6.2in;
+    height: 8.8in;
+    padding: 20px;
+}
+page {
+    background: rgb(255, 255, 255);
+    display: block;
+    margin: 0 auto;
+    border: 1px solid rgb(61, 94, 161);
+    box-shadow: 0px 0px 10px rgb(61, 94, 161);
+}
+
+page .body{
+    border: 4px solid rgb(61, 94, 161);
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+page .body .name{
+    text-align: center;
+    border: 3px solid rgb(40, 78, 155);
+    margin: 5px 5px 0px 5px;
+}
+
+page .body .name h1{
+    padding: 5px;
+    font-size: 31px;
+    font-weight: 600;
+    margin: 0;
+}
+
+page .body .logo{
+    text-align: center;
+    margin: -20px 5px 0px 5px;
+}
+
+page .body .logo img{
+    height: 180px;
+    width: 250px;
+}
+
+page .body .dept{
+    text-align: center;
+    margin: -20px 5px 0px 5px;
+    border: 3px solid rgb(40, 78, 155);
+}
+
+page .body .dept h4{
+    padding: 5px;
+    margin: 0;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+page .body .details{
+    text-align: left;
+    padding: 6px;
+    margin: 8px 0px 0px 0px;
+    height: 310px;
+    overflow: auto;
+}
+
+page .body .details .code span{
+    font-size: 22px;
+    font-weight: 400;
+}
+
+page .body .submit-info{
+    text-align: left;
+    padding: 6px;
+    color: rgb(40, 78, 155);
+    font-weight: 600;
+}
+
+page .body .submit-info h4 .submit{
+    margin-left: 61px;
+}
+
+page .body .subinfo .row div{
+    padding: 2px;
+
+}
+
+page .body .subinfo .row div .remark{
+    width: 170px;
+    margin-left: 15px;
+}
+
+page .body .subinfo .row div .subby{
+    width: 350px;
+    margin-left: 9px;
+    padding: 5px;
+}
+
+page .body .subinfo .row div .subby h4 .bat{
+    margin-right: 30px;
+}
+
+page .body .subinfo .row div .border{
+    height: 190px;
+    margin-top: -14px;
+    border: 3px solid rgb(61, 94, 161) !important;
+}
+
+#preview-item{
+    display: flex;
+    padding: 0px 50px 0px 50px;
+    color: rgb(40, 38, 154);
+}
+
+#download{
+    margin-top: 2px !important;
+}
+
+
+.footer{
+    display: grid;
+    place-items: center;
+    border-top: 1px solid rgb(40, 38, 154);
+    box-shadow: 0px 0px 10px rgb(40, 38, 154);
+}
+
+#Performance{
+    display: block;
+}
+
+.pdf-page{
+    overflow: auto;
+}
+
+
+@media (min-width: 310px) and (max-width: 430px) { 
+    #insert-info{
+        padding-left: 12px;
+    }
+    #preview-item {
+        padding: 30px 18px 0px 20px;
+    }
+    page .body .submit-info h4 .submit {
+        margin-left: 73px;
+    }
+    page .body .subinfo .row div .subby {
+        padding: 7px;
+    }
+    #navbar-brand{
+        font-size: 13px !important;
+    }
+}
