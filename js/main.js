@@ -1,3 +1,9 @@
+document.addEventListener('DOMContentLoaded', function() {
+    $('.main').css('opacity','1');
+    $('.main').css('pointer-events','auto');
+    $("#preloader").delay(1000).fadeOut("slow");
+});
+
 kendo.pdf.defineFont({ 
     "DejaVu Sans"             : "https://kendo.cdn.telerik.com/2016.2.607/styles/fonts/DejaVu/DejaVuSans.ttf",
     "DejaVu Sans|Bold"        : "https://kendo.cdn.telerik.com/2016.2.607/styles/fonts/DejaVu/DejaVuSans-Bold.ttf",
@@ -106,11 +112,9 @@ $(document).ready(function(){
     // window.onload = function() {
        
     // };
-    $(window).on('load', function(){
-        $('.main').css('opacity','1');
-        $('.main').css('pointer-events','auto');
-        $("#preloader").delay(1000).fadeOut("slow");
-    });
+    // $(window).on('load', function(){
+        
+    // });
 
     function selectcourese(type){
         if(type != "Select...."){
