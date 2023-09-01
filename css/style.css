@@ -25,6 +25,11 @@ body{
     color: rgb(40, 38, 154);
 }
 
+#puc-logo{
+    height: 50px;
+    width: 50px;
+}
+
 section{
     margin-bottom: 2.5rem;
 }
@@ -118,9 +123,8 @@ page .body .details{
     overflow: auto;
 }
 
-page .body .details .code span{
-    font-size: 22px;
-    font-weight: 400;
+#ssection{
+    text-transform: uppercase;
 }
 
 page .body .submit-info{
@@ -166,8 +170,48 @@ page .body .subinfo .row div .border{
     color: rgb(40, 38, 154);
 }
 
-#download{
+.button{
     margin-top: 2px !important;
+}
+
+.button button {
+    width: 130px;
+}
+
+.button #download{
+    background-color: #1b2579 !important;
+    box-shadow: 0px 0px 3px #103a8f;
+}
+
+.button #download:hover{
+    background-color: #274d8a !important;
+}
+
+.button #theme{
+    background-color: #043f56 !important;
+    box-shadow: 0px 0px 3px #510878;
+}
+
+.button #theme:hover{
+    background-color: #274d8a !important;
+}
+
+.theme-pic1{
+    height: 210px;
+    width: 160px;
+}
+
+.theme-pic2{
+    height: 205px;
+    width: 157px;
+}
+
+.theme-radio{
+    margin-top: 90px;
+}
+
+.theme-preview{
+    margin-left: 20px;
 }
 
 
@@ -201,6 +245,9 @@ page .body .subinfo .row div .border{
     #insert-info{
         padding-left: 12px;
     }
+    .button button {
+        width: 85px;
+    }
     #preview-item {
         padding: 30px 18px 0px 20px;
     }
@@ -212,5 +259,16 @@ page .body .subinfo .row div .border{
     }
     #navbar-brand{
         font-size: 13px !important;
+    }
+    .theme-preview{
+        margin-left: 75px;
+    }
+    .theme-pic2{
+        width: 154px;
+        margin-left: 3px;
+        margin-top: 25px;
+    }
+    .theme-radio2{
+        margin-top: 120px;
     }
 }

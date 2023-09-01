@@ -1,8 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
     $('.main').css('opacity','1');
     $('.main').css('pointer-events','auto');
-    $("#preloader").delay(1000).fadeOut("slow");
+    $("#preloader").delay(500).fadeOut("slow");
 });
+
+
 
 kendo.pdf.defineFont({ 
     "DejaVu Sans"             : "https://kendo.cdn.telerik.com/2016.2.607/styles/fonts/DejaVu/DejaVuSans.ttf",
@@ -21,6 +23,176 @@ function getPDF(selector) {
 }
 
 const course = [
+    {
+        name: 'Basic Economics.',
+        code: 'ECO 201',
+        semester: '3rd'
+    },
+    {
+        name: 'Data Structure.',
+        code: 'CSE 221',
+        semester: '3rd'
+    },
+    {
+        name: 'Data Structure Laboratory.',
+        code: 'CSE 222',
+        semester: '3rd'
+    },
+    {
+        name: 'Digital Electronics.',
+        code: 'EEE 311',
+        semester: '3rd'
+    },
+    {
+        name: 'Digital Electronics Laboratory.',
+        code: 'EEE 312',
+        semester: '3rd'
+    },
+    {
+        name: 'Engineering Mathematics III.',
+        code: 'MAT 201',
+        semester: '3rd'
+    },
+    {
+        name: 'Object Oriented Programming.',
+        code: 'CSE 211',
+        semester: '3rd'
+    },
+    {
+        name: 'Object Oriented Programming Laboratory.',
+        code: 'CSE 212',
+        semester: '3rd'
+    },
+    {
+        name: 'Algorithm Design And Analysis.',
+        code: 'CSE 225',
+        semester: '4th'
+    },
+    {
+        name: 'Algorithm Design And Analysis Laboratory.',
+        code: 'CSE 226',
+        semester: '4th'
+    },
+    {
+        name: 'Database Management System.',
+        code: 'CSE 237',
+        semester: '4th'
+    },
+    {
+        name: 'Database Management System Laboratory.',
+        code: 'CSE 238',
+        semester: '4th'
+    },
+    {
+        name: 'Engineering Mathematics IV.',
+        code: 'MAT 203',
+        semester: '4th'
+    },
+    {
+        name: 'Industrial & Business Management.',
+        code: 'MGT 203',
+        semester: '4th'
+    },
+    {
+        name: 'Signals & Systems.',
+        code: 'EEE 201',
+        semester: '4th'
+    },
+    {
+        name: 'Signals & Systems Laboratory.',
+        code: 'EEE 202',
+        semester: '4th'
+    },
+    {
+        name: 'Communication Engineering.',
+        code: 'EEE 309',
+        semester: '5th'
+    },
+    {
+        name: 'Communication Engineering Laboratory.',
+        code: 'EEE 310',
+        semester: '5th'
+    },
+    {
+        name: 'Computational Methods for Engineering Problems.',
+        code: 'CSE 301',
+        semester: '5th'
+    },
+    {
+        name: 'Computational Methods for Engineering Problems Laboratory.',
+        code: 'CSE 302',
+        semester: '5th'
+    },
+    {
+        name: 'Microprocessors & Microcontrollers.',
+        code: 'EEE 371',
+        semester: '5th'
+    },
+    {
+        name: 'Microprocessors & Microcontrollers Laboratory.',
+        code: 'EEE 372',
+        semester: '5th'
+    },
+    {
+        name: 'Organizational Behavior.',
+        code: 'MGT 251',
+        semester: '5th'
+    },
+    {
+        name: 'Software Engineering & Information System Design.',
+        code: 'CSE 305',
+        semester: '5th'
+    },
+    {
+        name: 'Software Engineering & Information System Design Laboratory.',
+        code: 'CSE 306',
+        semester: '5th'
+    },
+    {
+        name: 'Artificial Intelligence.',
+        code: 'CSE 317',
+        semester: '6th'
+    },
+    {
+        name: 'Artificial Intelligence Laboratory.',
+        code: 'CSE 318',
+        semester: '6th'
+    },
+    {
+        name: 'Computer Network.',
+        code: 'CSE 367',
+        semester: '6th'
+    },
+    {
+        name: 'Computer Network Laboratory.',
+        code: 'CSE 368',
+        semester: '6th'
+    },
+    {
+        name: 'Computer Organization & Architecture.',
+        code: 'CSE 337',
+        semester: '6th'
+    },
+    {
+        name: 'Data Communication.',
+        code: 'CSE 364',
+        semester: '6th'
+    },
+    {
+        name: 'Operating Systems.',
+        code: 'CSE 333',
+        semester: '6th'
+    },
+    {
+        name: 'Operating Systems Laboratory.',
+        code: 'CSE 334',
+        semester: '6th'
+    },
+    {
+        name: 'Software Development.',
+        code: 'CSE 338',
+        semester: '6th'
+    },
     {
         name: 'Control Systems.',
         code: 'EEE 313',
@@ -107,6 +279,13 @@ const course = [
         semester: '8th'
     }
 ]
+function clearText(elementId) {
+    var spanElement = document.getElementById(elementId);
+    var spanText = spanElement.textContent;
+    if (spanText == "Click to edit" || spanText == "Click" || spanText == "S"){
+        spanElement.textContent = "";
+    }
+}
 
 $(document).ready(function(){
     // window.onload = function() {
@@ -115,6 +294,7 @@ $(document).ready(function(){
     // $(window).on('load', function(){
         
     // });
+    
 
     function selectcourese(type){
         if(type != "Select...."){
@@ -301,7 +481,6 @@ $(document).ready(function(){
     $("#isection").keyup(function(){
         var name = $(this).val();
         $("#ssection").text(name);
-        $("#ssection").css('text-transform','uppercase');
         localStorage.setItem('section', name);
     });
 
@@ -320,6 +499,10 @@ $(document).ready(function(){
         }
         $(".d-name").text(name);
         localStorage.setItem('dept', name);
+    });
+
+    $('#theme-save').click(function(){
+        $("#theme-modal").modal("hide");
     });
 
     $("#saveinfo").change(function(){
