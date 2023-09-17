@@ -51,17 +51,17 @@ page .body .name h1{
 
 page .body .logo{
     text-align: center;
-    margin: -20px 5px 0px 5px;
+    margin: 10px 5px 0px 5px;
 }
 
 page .body .logo img{
-    height: 280px;
+    height: 220px;
     width: 350px;
 }
 
 page .body .dept{
     text-align: center;
-    margin: -20px 5px 0px 5px;
+    margin: 10px 5px 0px 5px;
     border: 3px solid rgb(40, 78, 155);
 }
 
@@ -80,7 +80,7 @@ page .body .details{
     overflow: auto;
 }
 #sname{
-    font-size: 30px !important;
+    font-size: 32px !important;
 }
 
 h4{
