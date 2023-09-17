@@ -222,6 +222,10 @@ page .body .subinfo .row div .border{
     box-shadow: 0px 0px 10px rgb(40, 38, 154);
 }
 
+.total-visited{
+    color: rgb(40, 38, 154);;
+}
+
 #Performance{
     display: block;
 }
@@ -229,6 +233,8 @@ page .body .subinfo .row div .border{
 .pdf-page{
     overflow: auto;
 }
+
+
 
 #love{
     background: transparent url(../img/love_message.gif) no-repeat center center;
@@ -270,5 +276,8 @@ page .body .subinfo .row div .border{
     }
     .theme-radio2{
         margin-top: 120px;
+    }
+    .total-visited{
+        display: none;
     }
 }
